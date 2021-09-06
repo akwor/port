@@ -13,16 +13,16 @@ html {
     width: 250px; overflow: hidden;
 }
 #navTop_box #logo>div {width: 80px; float: left; line-height: 70px;}
-#navTop_box #logo>span {display: inline-block; font-size: 14px; position: relative; top: 30px; left: 10px;}
+#navTop_box #logo>span {display: inline-block; font-size: 14px; position: relative; top: 30px; left: 10px; font-weight: bold;}
 /*상단 메뉴바*/
 #navTop_box #topMenu{
-    position: absolute; right: 0; top: 0; overflow: hidden;
+    position: absolute; right: 0; top: 0; overflow: hidden; 
 }
 #navTop_box #topMenu li{
-    float: left; padding-left: 30px; line-height: 70px;
+    float: left; padding-left: 30px; line-height: 70px; 
 }
 
-#navTop_box #topMenu li a{font-size: 18px;}
+#navTop_box #topMenu li a{font-size: 18px; }
 #navTop_box #topMenu li>a.active {
     color: #b3e5fc; border-bottom: 3px solid #b3e5fc; font-weight: bold; padding-bottom: 4px;
 }
@@ -36,11 +36,13 @@ html {
     background: #b3e5fc;
     width: calc(100% - 140px);
     height: calc(100% - 70px); margin: auto;
+    
 }
 .section_home>h1 {
     color: #fff; font-size: 130px;
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+    border: 3px solid white;
 }
 
 /* s1 profile*/
@@ -66,15 +68,15 @@ html {
 .right_box{flex: 2; display: flex;
 flex-direction: column; justify-content: space-between;}
 .pr_title{
-    border-left: 3px solid #b3e5fc;
-    padding-left: 5px;
+    border-left: 10px solid #b3e5fc;
+    padding-left: 5px; padding-top: -10px;
 }
 .pr_date{
     float: left; padding-top: 20px;
     padding-left: 10px;
 }
 .pr_txt{
-    line-height: 1.5; float: left; _padding-top: 20px;
+    line-height: 1.5; float: left; padding-top: 20px;
     padding-left: 10px;
 }
 .pr_txt>div{font-weight: bold;}
@@ -108,32 +110,32 @@ flex-direction: column; justify-content: space-between;}
     display: flex; width: 300%; 
 }
 .slide {
-    position: absolute; left: 100%; width: 100%;
+    position: absolute; left: 100%; width: 80%;
     display: flex; margin: 0 100px;
 }
 .slide>div{
     flex: 1; justify-content: space-around;
 }
 .slide>.image{
-    position: relative; top: 15vh;
+    position: relative; top: 2.5vh; left: 33vh;
 }
 .slide>.image>img{
-    width: 100%;
+    width: 140%; height: 65%;
 }
 .slide .pf_txt_container{
-    position: relative; top: 18vh;
+    position: relative; top: 51vh; left: -32vh;
 }
 .slide .pf_txt_container .pf_title {
-    width: 50%; height: 50px; margin: auto; border-radius: 10px; background: #eee; line-height: 50px; text-align: center;
+    width: 55%; height: 50px; margin: auto; border-radius: 15px; background: #b3e5fc; line-height: 45px; text-align: center;
 }
 .slide .pf_txt_container table{
-    width: 80%; margin: auto; line-height: 25px; font-size: 16px; margin-left: 95px; margin-top: 30px;
+    width: 51%; margin: auto; line-height: 50px; font-size: 18px; margin-left: 167px; margin-top: 10px; border: 2px solid black; text-align: left;
 }
 .slide .pf_txt_container table tr{
     line-height: 2;
 }
 .slide .pf_txt_container table tr td:nth-child(1) {
-    width: 30%;
+    width: 50%;
 }
 .slide .pf_txt_container table tr td:nth-child(2) {
     width: 70%;
@@ -141,18 +143,19 @@ flex-direction: column; justify-content: space-between;}
 
 /* 화살표 버튼*/
 .left_arrow {
-    position: absolute; left: 10px; top: 45%; cursor: pointer;
+    position: absolute; left: 600px; top: 66%; cursor: pointer;
 }
 .right_arrow {
-    position: absolute; right: 10px; top: 45%; cursor: pointer;
+    position: absolute; right: 600px; top: 66%; cursor: pointer;
 }
 /* go버튼*/
 .pf_gosite{
-    position: relative; text-align: center; margin-top: 80px; margin-bottom: 100px;
+    position: relative; text-align: center; margin-top: 5px; margin-bottom: px;
+    margin-left: 550px; top: -37%;
 }
 .pf_gosite a{
     overflow: hidden; position: relative; display: inline-block;
-    vertical-align: top; width: 30%;
+    vertical-align: top; width: 40%;
     padding: 10px 0; font-size: 18px;
     border: 1px solid #aaa; transition: all 0.5s;
 }
@@ -202,19 +205,31 @@ flex-direction: column; justify-content: space-between;}
     }
 /*    s2 포트폴리오*/
     .slide{
-        flex-direction: column; margin: 0 67px;
+        flex-direction: column; margin: 0 -305px;
     }
     .slide>.image {
         width: 82%; position: relative; top: 5vh;
     }
     .slide .pf_txt_container {
-        position: relative; top: 10vh; width: 80%;
+        position: relative; top: 7vh; width: 85%; left: -35vh;
     }
+    .slide .pf_txt_container .pf_title {
+    width: 55%; height: 50px; margin: auto; border-radius: 15px; background: #b3e5fc; line-height: 45px; text-align: center; 
+    
+    }
+    
+    .slide>div{
+    flex: 1; justify-content: space-around;
+}
     .pf_gosite {
-        margin-top: 30px;
+        margin-top: 10px;
     }
-    .left_arrow, .right_arrow {
-        width: 30px; 
+    .left_arrow {
+        width: 30px; top: 65%; left: 200px;
+    }
+    .right_arrow {
+        width: 30px; top: 65%; right: 200px;
+        
     }
 }
 /*<<<<<<<<<<<<<<<<<<<< 모바일 699px이하 >>>>>>>>>>>>>>>>>>>>>*/
